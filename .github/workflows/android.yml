@@ -24,4 +24,5 @@ jobs:
       - name: Grant execute permission for gradlew script
         run: chmod +x ./PMT/gradlew
       - name: Build Project
-        run: ./PMT/gradlew build
+        run: ./gradlew build
+        working-directory: PMT
