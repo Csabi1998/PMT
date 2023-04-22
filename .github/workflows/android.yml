@@ -1,0 +1,25 @@
+name: Build Android App
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: "11"
+      - name: Set up Android SDK
+        uses: android-actions/setup-android-sdk@v2
+        with:
+          sdk-platform: "android-31"
+          ndk-version: "23.1.7779620"
+          java-version: "11"
+          emulator-version: "30.9.4"
+      - run: ./gradlew build
