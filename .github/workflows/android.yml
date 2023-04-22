@@ -18,7 +18,7 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android-sdk@v2
         with:
-          sdk-platform: "android-31"
+          sdk-platform: "android-30"
           ndk-version: "23.1.7779620"
           java-version: "11"
           emulator-version: "30.9.4"
