@@ -22,4 +22,4 @@ jobs:
           distribution: "adopt"
 
       - name: Build Project
-        run: .PMT/gradlew build
+        run: ./PMT/gradlew build
