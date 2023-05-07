@@ -9,4 +9,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="database">Pmt.db</string>
+    <string name="auth_url">https://localhost:7004/api</string>
+    <string name="worklog_url">https://localhost:7003/api</string>
 </resources>
